@@ -1,38 +1,66 @@
-.App {
-  text-align: center;
+.app{
+    padding: .25em;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainPart{
+    float: left;
+    padding: 10px;
+    width: 80%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.slots{
+    overflow: scroll;
+    height: 500px; 
+    overflow-x: hidden ;
   }
+
+.timeSlot{
+    width: 100%;
+    padding: 1.5em;
+    text-align: left;
+    border-radius: 0;
+    border-width: .5px;
+    background-color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.timeSlot:hover{
+    background-color: rgba(25, 118, 210, 0.04)
+    
+}
+.activeTime{
+    width: 100%;
+    padding: 1.5em;
+    text-align: left;
+    border-radius: 0;
+    border-width: .5px;
+    background-color: #1976d2;
+    color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.header{
+    background-color: #002649;
+    padding: 10px 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* width */
+::-webkit-scrollbar {
+    width: 4px;
+    border-radius:100%
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
   }
-}
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

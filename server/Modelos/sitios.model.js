@@ -1,9 +1,13 @@
-const mongoose= require('mongoose');
+import mongoose from 'mongoose'
 
 const sitioSchema= mongoose.Schema({
     location:{
         type:String,
         require:true,
+    },
+    img:{
+        type:String,
+        require:true
     },
     id:{
         type:String,
@@ -13,4 +17,4 @@ const sitioSchema= mongoose.Schema({
 });
 
 const Sites = mongoose.model('Sites', sitioSchema);
-module.exports(Sites);
+export default (Sites);
